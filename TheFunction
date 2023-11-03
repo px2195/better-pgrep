@@ -4,7 +4,7 @@ function pgrep(){
 	exe="$1"
 	shift
 	arg="$*"
-	ps0=`/bin/pgrep "$exe"`
+	ps1=`/bin/pgrep "$exe"`
 	rc=$?
 	ps2=`echo "$ps1"`
 	ps3=`echo "$ps2" |xargs ps $arg`
